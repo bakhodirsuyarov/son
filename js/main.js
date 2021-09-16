@@ -17,6 +17,12 @@ elForm.addEventListener('submit', function(e){
 
     elTitle.textContent = elResault
     // console.log(elResault)
+  }else if (elInput.value > 0){
+    let raqam = Math.round(elInput.value)
+
+    elResault.push(raqam)
+
+    elTitle.textContent = elResault
   }
   elInput.value = ''
 
